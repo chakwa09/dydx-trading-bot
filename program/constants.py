@@ -5,10 +5,13 @@ from decouple import config
 MODE = "DEVELOPMENT"
 
 # Close all open positions and orders
-ABORT_ALL_POSITIONS = False
+ABORT_ALL_POSITIONS = True
 
 # Find Cointegrated pairs
-FIND_COINTEGRATED = True
+FIND_COINTEGRATED = False
+
+#Manage exits
+MANAGE_EXITS = True
 
 #Place Trades
 PLACE_TRADES = True
@@ -22,7 +25,7 @@ WINDOW = 21
 #Thresholds - Opening
 MAX_HALF_LIFE = 24
 ZSCORE_THRESH = 1.5
-USD_PER_TRADE = 50
+USD_PER_TRADE = 100
 USD_MIN_COLLATERAL = 1880
 
 #Thresholds - Closing
@@ -31,8 +34,7 @@ CLOSE_AT_ZSCORE_CROSS = True
 #ETHEREUM ADDRESS (public apla sto wallet auto einai testnet)
 ETHEREUM_ADDRESS = "0x15719152333b5Ce0aAeaEbc98f5EF6d1C7120B1e"
 
-# Wallet private Key
-ETH_PRIVATE_KEY = "0x92dd347e2c541d1ef340a21600309b302672a630f0486e789ebfc7cf0be9f2d6"
+
 
 #KEYS - Production
 STARK_PRIVATE_KEY_MAINNET = config("STARK_PRIVATE_KEY_MAINNET")
