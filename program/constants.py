@@ -8,7 +8,7 @@ MODE = "DEVELOPMENT"
 ABORT_ALL_POSITIONS = True
 
 # Find Cointegrated pairs
-FIND_COINTEGRATED = False
+FIND_COINTEGRATED = True
 
 #Manage exits
 MANAGE_EXITS = True

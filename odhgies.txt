@@ -2,7 +2,7 @@ venv\Scripts\activate
 
 ston arxiko fakelo
 
-Gia git pame project directory
+Gia git pame project directory cd ..
 git add .
 git commit -m "Stage 3 completion"
 git push -u origin main
